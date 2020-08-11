@@ -1,8 +1,8 @@
-package clone;
+package com.feng.knowlege.clone;
 
 import java.io.Serializable;
 
-public class Grandson implements Serializable {
+public class Children implements Serializable {
     private String name;
     private int age;
     public String getName() {
@@ -21,22 +21,20 @@ public class Grandson implements Serializable {
         this.age = age;
     }
 
-    public Grandson(String name, int age) {
+    public Children(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public Grandson() {
+    public Children() {
 
     }
 
     @Override
     public String toString() {
-        return "Grandson{" +
+        return "Children{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
-
-
-    }
+}

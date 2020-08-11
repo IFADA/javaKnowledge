@@ -1,6 +1,4 @@
-package clone;
-
-import lombok.Data;
+package com.feng.knowlege.clone;
 
 import java.io.*;
 
@@ -56,7 +54,7 @@ public class Person implements Serializable,Cloneable{
     }
 
     @Override
-    protected Person clone() throws CloneNotSupportedException {
+    public Person clone() throws CloneNotSupportedException {
 
         try {
             ByteArrayOutputStream bout = new ByteArrayOutputStream();
