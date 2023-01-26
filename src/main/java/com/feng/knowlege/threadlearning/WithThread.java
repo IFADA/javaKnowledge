@@ -21,6 +21,8 @@ public class WithThread {
                 stringBuilder.append(future.get());
             }
             long end = System.currentTimeMillis();
+
+
             System.out.println("调用完完毕"+stringBuilder.toString()+"总耗时"+(end-start)+"毫秒");
         }finally {
            executorService.shutdown();
